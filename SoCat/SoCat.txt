@@ -1,0 +1,53 @@
+/*Creation of DATABASE & DATA TABLES*/
+
+CREATE DATABASE SoCat;
+
+CREATE TABLE Settings(
+		settingid int Primary Key Identity(1, 1),
+		accountSid varchar(50),
+		authToken varchar(50),
+		number varchar(20),
+		password varchar(20) NOT NULL,
+		master varchar(20) NOT NULL
+);
+
+CREATE TABLE users(
+		userid int PRIMARY KEY IDENTITY(1, 1),
+		firstname varchar(20) NOT NULL,
+		lastname varchar(20) NOT NULL,
+		username varchar(20) NOT NULL,
+		password varchar(20) NOT NULL,
+		number varchar(20) NOT NULL,
+		profile varchar(100) NOT NULL
+);
+
+CREATE TABLE album(
+		albumid int PRIMARY KEY IDENTITY(1, 1),
+		userid int NOT NULL,
+		profile varchar(1000) NOT NULL,
+		albumname varchar(100) NOT NULL,
+		albumgenre varchar(20) NOT NULL
+);
+		
+
+CREATE TABLE Music(
+		musicid int PRIMARY KEY IDENTITY(1, 1),
+		userid int NOT NULL,
+		albumid int NOT NULL,
+		dateregistered DATETIME NOT NULL
+);
+
+CREATE TABLE Anime(
+		animeid int PRIMARY KEY IDENTITY(1, 1),
+		userid int NOT NULL,
+		albumid int NOT NULL,
+		dateregistered DATETIME NOT NULL
+);
+
+CREATE TABLE Songs(
+		songid int PRIMARY KEY IDENTITY(1, 1),
+		albumid int NOT NULL,
+		songtitle varchar(100) NOT NULL,
+		songwriter varchar(100) NOT NULL,
+		dateregistered DATETIME NOT NULL
+);
