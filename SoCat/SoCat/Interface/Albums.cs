@@ -215,7 +215,7 @@ namespace SoCat.Interface
 
                             try
                             {
-                                File.Copy(filename, Path.Combine(@"C:\Users\gubot\source\repos\SoCat\SoCat\bin\Debug\Albums", file));
+                                File.Copy(filename, Path.Combine(@"C:\Users\gubot\source\repos\Song-Catalog\SoCat\SoCat\bin\Debug\Albums", file));
                             }
                             catch (Exception ex)
                             {
@@ -293,7 +293,7 @@ namespace SoCat.Interface
 
                             try
                             {
-                                File.Copy(filename, Path.Combine(@"C:\Users\gubot\source\repos\SoCat\SoCat\bin\Debug\Albums", file));
+                                File.Copy(filename, Path.Combine(@"C:\Users\gubot\source\repos\Song-Catalog\SoCat\SoCat\bin\Debug\Albums", file));
                             }
                             catch (Exception ex)
                             {

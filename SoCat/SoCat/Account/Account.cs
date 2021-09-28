@@ -82,7 +82,7 @@ namespace SoCat.Account
                     try
                     {
                         //Uploading the image selected
-                        File.Copy(lblimagefile.Text, Path.Combine(@"C:\Users\gubot\source\repos\SoCat\SoCat\bin\Debug\Profile\", file)/*true(optional)*/);
+                        File.Copy(lblimagefile.Text, Path.Combine(@"C:\Users\gubot\source\repos\Song-Catalog\SoCat\SoCat\bin\Debug\Profile\", file)/*true(optional)*/);
 
                         status = true;
                     }
